@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ZorudaRinku</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="title fade-up">
+    <img src="img/Zoruda.png" alt="">
+</div>
+<div class="socials fade-up drop-shadow">
+    <a href="https://twitch.tv/ZorudaRinku"><img class="image-vertical-align" src="img/Twitch.png" alt="Twitch Logo"></a>
+    <a href="https://www.youtube.com/channel/UC8WTqI1jOqdloSvUj3N_GbQ"><img class="image-vertical-align" src="img/Youtube.png" alt="Youtube Logo"></a>
+    <a href="https://discord.gg/JxBc2fxNy9"><img class="image-vertical-align" src="img/Discord.png" alt="Discord Logo"></a>
+    <a href="https://www.instagram.com/ZorudaRinku/"><img class="image-vertical-align" src="img/instagram.png" alt="Instagram Logo"></a>
+</div>
+<!-- Add a placeholder for the Twitch embed -->
+<div id="twitch-embed" class="twitch-embed fade-up drop-shadow"></div>
+
+<!-- Load the Twitch embed JavaScript file -->
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+<!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+<script type="text/javascript">
+    new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: "ZorudaRinku",
+        theme: "dark"
+    });
+</script>
+<div class="friends fade-up">
+    <h2>Stream Friends:</h2>
+    <a href="https://twitch.tv/Iceu" target="_blank">
+        <div class="streamer">
+            <img src="img/Iceu.png" alt="">
+            <p>Iceu</p>
+        </div>
+    </a>
+    <a href="https://twitch.tv/Kervs_" target="_blank">
+        <div class="streamer">
+            <img src="img/Kervs_.png" alt="">
+            <p>Kervs_</p>
+        </div>
+    </a>
+    <a href="https://www.twitch.tv/angelikittyx" target="_blank">
+        <div class="streamer">
+            <img src="img/angelikittyx.png" alt="">
+            <p>angeliKITTYx</p>
+        </div>
+    </a>
+    <a href="https://www.twitch.tv/alecrmedia" target="_blank">
+        <div class="streamer">
+            <img src="img/alecrmedia.png" alt="">
+            <p>AlecRMedia</p>
+        </div>
+    </a>
+    <a href="https://www.twitch.tv/xndotv" target="_blank">
+        <div class="streamer">
+            <img src="img/xndotv.png" alt="">
+            <p>xndoTV</p>
+        </div>
+    </a>
+    <a href="https://www.twitch.tv/yeetballs02" target="_blank">
+        <div class="streamer">
+            <img src="img/yeetballs02.png" alt="">
+            <p>yeetballs02</p>
+        </div>
+    </a>
+</div>
+<div class="squidjam fade-up">
+    <img src="img/SquidJam.gif" alt="">
+</div>
+</body>
+</html>

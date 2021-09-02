@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    text-align: center;
+    background-color: #050505;
+    font: 26px auto Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.fade-up{
+    overflow: auto;
+    opacity: 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0,40px,0)
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.drop-shadow{
+    filter: drop-shadow(0 0 0.3rem #bd0001);
+}
+
+.title{
+    overflow: hidden;
+}
+
+.title img{
+    margin-left: 0.3em;
+    height: 100%;
+    width: 100%;
+    max-width: 48em;
+    animation: SlideAnimation ease-in-out 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes SlideAnimation {
+    0% {
+        transform: translate3d(0px,-15px,0px)
+    }
+    50% {
+        transform: translate3d(0px,5px,0px)
+    }
+    100% {
+        transform: translate3d(0px,-15px,0px)
+    }
+
+}
+
+.friends{
+    overflow: hidden;
+    margin-bottom: 3em;
+}
+
+.friends a{
+    text-decoration: none;
+}
+
+h2{
+    color: #8a0000;
+    filter: drop-shadow(0 0 0.1rem #bd0001);
+}
+
+.streamer{
+    width: 6em;
+    height: 7em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-bottom: 1em;
+    border: #18181b ;
+    border-radius: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #18181b ;
+    filter: drop-shadow(0 0 0.3rem #bd0001);
+    transition: all .2s ease-in-out;
+}
+
+.streamer:hover{
+    transform: scale(1.25, 1.25);
+}
+
+.streamer p{
+    margin-top: 0.5em;
+    display: block;
+    color: #bd0001;
+    font-size: 0.9em;
+    filter: drop-shadow(0 0 0.1rem #bd0001);
+}
+
+.streamer img{
+    height: 90px;
+    width: 90px;
+    margin-top: .5em;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    border-width: 2px;
+    filter: drop-shadow(0 0 0.1rem #bd0001);
+}
+
+.socials img{
+    max-width: 4em;
+    width: 10%;
+    height: 10%;
+    vertical-align: middle;
+}
+
+.twitch-embed{
+    margin: 2em auto;
+    height: 20em;
+    width: 100%;
+    max-width: 40em;
+    overflow: hidden;
+}
+
+.squidjam{
+    float: left;
+}
